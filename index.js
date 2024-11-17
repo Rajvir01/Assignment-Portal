@@ -10,7 +10,7 @@ app.use('/user', userRoutes);
 app.use('/admin', adminRoutes);
 
 mongoose
-  .connect('mongodb+srv://rajvir:rajvir01@cluster0.191grik.mongodb.net/assignmentPortal?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect('', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('Database connection error:', err));
 
